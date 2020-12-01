@@ -1,0 +1,67 @@
+label.container input:checked ~ .checkmark {
+  background-color: orange; 
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+label.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+label.container input:checked ~ .checkmark:after {
+  display: block;
+  width: 33%;
+  height: 33%;
+}
+
+/* Style the checkmark/indicator */
+label.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+.main1{
+  display: inline-block;
+ 
+  
+ 
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.holder
+{
+  float: left;
+  height: 100%;
+  width: 33%;
+  display:inline;
+}
